@@ -4,6 +4,7 @@ import { publicProcedure } from "../trpc";
 
 export const postRouter = {
   all: publicProcedure.query(({ ctx }) => {
+    ctx.logger.info("Request all posts");
     return [
       {
         id: 1,

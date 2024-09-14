@@ -151,6 +151,9 @@ importers:
 
   packages/api:
     dependencies:
+      '@acme/logger':
+        specifier: workspace:*
+        version: link:../logger
       '@trpc/server':
         specifier: 'catalog:'
         version: 11.0.0-rc.477
